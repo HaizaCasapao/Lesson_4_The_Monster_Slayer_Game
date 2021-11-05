@@ -5,6 +5,10 @@ const app = Vue.createApp({
             monsterHealth: 100
         };
     },
+
+    methods: {
+        
+    }
 });
 
 app.mount('#game');
