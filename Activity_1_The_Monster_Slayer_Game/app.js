@@ -23,6 +23,25 @@ const app = Vue.createApp({
         }
     },
 
+    watch: {
+        playerHealth(value) {
+         if (value <= 0 && this.monsterHealth <= 0) {
+             // A draw
+         }
+         else if (value <= 0) {
+             // Player lost
+         }   
+        },
+        monsterHealth(value) {
+         if (value <= 0 && this.playerHealth <= 0) {
+             // A draw
+         }
+         else if (value <= 0) {
+             // Monster lost
+         }   
+        }
+    },
+
     methods: {
         attackMonster() {
             this.currentRound++;
