@@ -7,7 +7,9 @@ const app = Vue.createApp({
     },
 
     methods: {
-        
+        attackMonster() {
+            const attackValue = Math.floor(Math.random() * (12 - 5)) + 5;
+        }
     }
 });
 
